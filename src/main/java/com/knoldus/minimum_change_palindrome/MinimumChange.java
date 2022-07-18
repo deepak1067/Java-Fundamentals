@@ -5,7 +5,9 @@ package com.knoldus.minimum_change_palindrome;
  */
 public class MinimumChange {
 
-    // Function to find the minimum number character change required
+    /**
+     * @param string the string
+     */
     static void change(String string)
     {
         // Finding the length of the string
@@ -29,6 +31,9 @@ public class MinimumChange {
         System.out.println(string);
     }
 
+    /**
+     * @param args the args
+     */
     public static void main(String args[])
     {
         String s = "jatan";

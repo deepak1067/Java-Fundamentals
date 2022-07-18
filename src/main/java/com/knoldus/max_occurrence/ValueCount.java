@@ -1,28 +1,44 @@
 package com.knoldus.max_occurrence;
 
-class ValueCount implements Comparable<ValueCount>{
-    int value;
-    int count;
+class ValueCount implements Comparable<ValueCount> {
+    /**
+     * the value.
+     */
+    private int value;
+    /**
+     * the count.
+     */
+    private int count;
 
-    public ValueCount(int value, final int count) {
+    public ValueCount(final int value, final int count) {
         super();
         this.value = value;
         this.count = count;
     }
 
     public ValueCount incrementCount() {
-        ++count;return this;}
+        ++count;
+        return this;
+    }
 
-    public int getValue() {return value;}
+    public int getValue() {
+        return value;
+    }
 
-    public void setValue(int value) {this.value = value;}
+    public void setValue(final int value) {
+        this.value = value;
+    }
 
-    public int getCount() {return count;}
+    public int getCount() {
+        return count;
+    }
 
-    public void setCount(int count) {this.count = count;}
+    public void setCount(final int count) {
+        this.count = count;
+    }
 
     @Override
-    public int compareTo(ValueCount arg0) {
+    public int compareTo(final ValueCount arg0) {
         return arg0.getCount() - this.getCount();
     }
 

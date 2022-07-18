@@ -1,23 +1,19 @@
 package com.knoldus.highest_product;
 
+
 /**
  * find a maximum product of a triplet in array of integers.
  */
 class HighestProductOfThreeNumbers {
     /**
-     *
      * @param arr the arr
      * @param n the n
      * @return max_product
      */
     static int maxProduct(int []arr, int n)
     {
-
-        // if size is less than 3, no triplet exists
         if (n < 3)
             return -1;
-
-        // will contain max product
         int max_product = Integer.MIN_VALUE;
 
         for (int i = 0; i < n - 2; i++)
@@ -29,7 +25,9 @@ class HighestProductOfThreeNumbers {
         return max_product;
     }
 
-    // Driver Code
+    /**
+     * @param args the args
+     */
     public static void main (String [] args)
     {
         int []arr = { 1, 3, 5, 6, 2 };
@@ -43,4 +41,3 @@ class HighestProductOfThreeNumbers {
             System.out.println("Maximum product is " + max);
     }
 }
-

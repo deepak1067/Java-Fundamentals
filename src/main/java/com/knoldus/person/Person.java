@@ -2,19 +2,41 @@ package com.knoldus.person;
 
 public class Person {
 
-    int addressId;
-    String name;
-    String city;
-    String Flat;
-    String State;
+    /**
+     * the addressId.
+     */
+    private int addressId;
+    /**
+     * the name.
+     */
+    private String name;
+    /**
+     * the city.
+     */
+    private String city;
+    /**
+     * the flat.
+     */
+    private String flat;
+    /**
+     * the state.
+     */
+    private String state;
 
 
-    public Person(int addressId, String name, String city, String flat, String state) {
+    /**
+     * @param addressId the addressId
+     * @param name the name
+     * @param city the city
+     * @param flat the flat
+     * @param state the state
+     */
+    public Person(final int addressId, final String name, final String city, final String flat, final String state) {
         this.addressId = addressId;
         this.name = name;
         this.city = city;
-        Flat = flat;
-        State = state;
+        this.flat = flat;
+        this.state = state;
 
     }
 
@@ -25,6 +47,10 @@ public class Person {
                 '}';
     }
 
+    /**
+     * get city.
+     * @return list of cities
+     */
     public String getCity() {
         return city;
     }
